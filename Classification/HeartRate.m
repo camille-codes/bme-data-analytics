@@ -104,7 +104,7 @@ x_all = linspace(min(all_mu), max(all_mu),200);
 x_all = x_all';
 y_all = pdf(gm_all, x_all);
 
-% getting the Guassian Mixture Distribution between the max and min in each group
+% getting the Guassian Mixture Model between the max and min in each group
 gm_athlete = fitgmdist([athlete_mu_min'; athlete_mu_max'],2,'Options',statset('MaxIter',1000));
 gm_non_athlete = fitgmdist([non_athlete_mu_min';non_athlete_mu_max'],2,'Options',statset('MaxIter',1000));
 
